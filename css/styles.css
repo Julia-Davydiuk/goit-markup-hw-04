@@ -133,7 +133,7 @@ img {
 
 .address-mail-link,
 .address-tel-link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -143,6 +143,24 @@ img {
   letter-spacing: 0.02em;
   color: var(--description-color);
 }
+
+.address-mail-link::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../image/envelope.svg);
+  background-size: contain;
+}
+
+.address-tel-link::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../image/smartphone.svg);
+  background-size: contain;
+}
 /*===========END HEADER===========*/
 
 /*===========HERO===========*/
@@ -151,6 +169,22 @@ img {
   padding-bottom: 200px;
   text-align: center;
   background: var(--background-secondary);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/overlay.jpg);
+
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -196,6 +230,7 @@ img {
 }
 
 .advantages-title {
+  padding-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -213,6 +248,34 @@ img {
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
+
+.advantages-list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--bacground-team);
+  border-radius: 4px;
+}
+
+.icone-antenna-1::before {
+  background-image: url(../image/advantages/antenna-1.svg);
+}
+
+.icone-clock-2::before {
+  background-image: url(../image/advantages/clock-2.svg);
+}
+
+.icone-diagram-3::before {
+  background-image: url(../image/advantages/diagram-3.svg);
+}
+
+.icone-astronaut-4::before {
+  background-image: url(../image/advantages/astronaut-4.svg);
+}
+
 /*===========END ADVANTAGES===========*/
 
 /*===========ABOUT US===========*/
@@ -261,6 +324,9 @@ img {
 }
 
 .team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--secondary-color);
   width: 270px;
 }
