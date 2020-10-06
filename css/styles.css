@@ -413,4 +413,22 @@ img {
   color: var(--contact-color);
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.social-list_item-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: royalblue;
+}
+
+.social-list_item-link svg {
+  color: red;
+}
 /*===========END FOOTER===========*/
