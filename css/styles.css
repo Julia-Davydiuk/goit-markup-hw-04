@@ -144,7 +144,7 @@ img {
   color: var(--description-color);
 }
 
-.address-mail-link::before {
+/* .address-mail-link::before {
   content: "";
   width: 16px;
   height: 12px;
@@ -160,6 +160,10 @@ img {
   margin-right: 10px;
   background-image: url(../image/smartphone.svg);
   background-size: contain;
+} */
+.icon-mail,
+.icon-tel {
+  margin-right: 10px;
 }
 /*===========END HEADER===========*/
 
@@ -302,7 +306,7 @@ img {
 
 /*===========TEAM===========*/
 .container-description {
-  padding: 30px 40px;
+  padding: 30px 30px;
 }
 
 .team-list {
@@ -413,22 +417,37 @@ img {
   color: var(--contact-color);
 }
 
+/*====sprite====*/
+
+.social-footer {
+  display: block;
+  width: 210px;
+  margin: 0 auto;
+  color: #ffffff;
+}
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 210px;
   margin: 0 auto;
+  margin-top: 16px;
 }
 
 .social-list_item-link {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: royalblue;
 }
 
+.social-list_item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-list_item-link svg {
   color: red;
+  width: 20px;
+  height: 20px;
 }
 /*===========END FOOTER===========*/
