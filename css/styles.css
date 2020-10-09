@@ -167,8 +167,8 @@ img {
   margin-right: 10px;
 }
 
-.icon-tel, .icon-tel:hover {
-  fill: var(--accent-color)
+.address-mail-link:hover svg {
+  fill: var(--accent-color);
 }
 /*===========END HEADER===========*/
 
@@ -299,10 +299,8 @@ img {
   display: inline-flex;
   width: 255px;
   height: 120px;
+  margin: 0 auto;
   background-color: var(--bacground-team);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .advantages-icon:not(:last-child) {
   margin-right: 30px;
@@ -311,7 +309,9 @@ img {
 .advantages-icon svg {
   width: 70px;
   height: 70px;
-
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*===========END ADVANTAGES===========*/
 
@@ -379,6 +379,41 @@ img {
   color: var(--description-color);
   margin-bottom: 16px;
 }
+
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.team-social-list_item-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team-social-list_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-list_item-link svg {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-list_item-link:hover {
+  fill: var(--accent-color);
+}
+
+.team-social-list_item-link:hover svg {
+  fill: var(--secondary-color);
+}
 /*===========END TEAM===========*/
 
 /*===========CLIENTS===========*/
@@ -388,6 +423,32 @@ img {
 }
 .client-list {
   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.client-list-item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-list-item-link {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.client-list-item-link svg {
+  fill: #afb1b8;
+  width: 90px;
+  height: 53px;
+}
+
+.client-list_item-link:hover {
+  fill: var(--accent-color);
 }
 /*===========END CLIENTS===========*/
 
@@ -490,11 +551,10 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: royalblue;
+  background: rgba(255, 255, 255, 0.1);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
 }
 
 .social-list_item:not(:last-child) {
@@ -505,6 +565,10 @@ img {
   fill: #ffffff;
   width: 20px;
   height: 20px;
-  
+}
 
-/*===========END FOOTER===========*/
+.team-social-list_item-link:hover {
+  fill: var(--accent-color);
+}
+
+/* ===========END FOOTER===========*/
