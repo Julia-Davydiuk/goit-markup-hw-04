@@ -463,7 +463,7 @@ img {
   margin-bottom: 20px;
 }
 
-/*====sprite====*/
+/*====sprite social list====*/
 .social-list {
   display: flex;
   justify-content: space-between;
@@ -471,7 +471,7 @@ img {
   margin: 0 auto;
 }
 
-.social-list_item-link {
+.social-list_item .social-list_item-link {
   display: block;
   width: 44px;
   height: 44px;
@@ -484,8 +484,11 @@ img {
 }
 
 .social-list_item-link svg {
-  color: red;
+  fill: #ffffff;
   width: 20px;
   height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 /*===========END FOOTER===========*/
