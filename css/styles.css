@@ -299,6 +299,11 @@ img {
 .advantages-icon:not(:last-child) {
   margin-right: 30px;
 }
+
+.advantages-icon svg {
+  width: 70px;
+  height: 70px;
+}
 /*===========END ADVANTAGES===========*/
 
 /*===========ABOUT US===========*/
