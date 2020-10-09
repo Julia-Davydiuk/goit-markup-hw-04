@@ -294,6 +294,7 @@ img {
 .advantages-icon {
   display: inline-flex;
   width: 255px;
+  height: 120px;
   background-color: var(--bacground-team);
 }
 .advantages-icon:not(:last-child) {
@@ -303,6 +304,9 @@ img {
 .advantages-icon svg {
   width: 70px;
   height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*===========END ADVANTAGES===========*/
 
@@ -482,6 +486,10 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: royalblue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 }
 
 .social-list_item:not(:last-child) {
@@ -492,8 +500,6 @@ img {
   fill: #ffffff;
   width: 20px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  
 
 /*===========END FOOTER===========*/
