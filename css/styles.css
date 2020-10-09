@@ -166,6 +166,10 @@ img {
 .icon-tel {
   margin-right: 10px;
 }
+
+.icon-tel, .icon-tel:hover {
+  fill: var(--accent-color)
+}
 /*===========END HEADER===========*/
 
 /*===========HERO===========*/
@@ -296,6 +300,9 @@ img {
   width: 255px;
   height: 120px;
   background-color: var(--bacground-team);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .advantages-icon:not(:last-child) {
   margin-right: 30px;
@@ -304,9 +311,7 @@ img {
 .advantages-icon svg {
   width: 70px;
   height: 70px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 /*===========END ADVANTAGES===========*/
 
