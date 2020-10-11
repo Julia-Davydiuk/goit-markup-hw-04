@@ -51,6 +51,9 @@ img {
 /*===========END COMPONENTS===========*/
 
 /*===========HEADER===========*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header .container {
   display: flex;
   align-items: center;
@@ -133,6 +136,15 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--description-color);
+}
+
+.icon-mail,
+.icon-tel {
+  margin-right: 10px;
+}
+
+.address-mail-link:hover svg {
+  fill: var(--accent-color);
 }
 /*===========END HEADER===========*/
 
@@ -234,6 +246,9 @@ img {
 
 .footer {
   background-color: var(--background-secondary);
+}
+
+.footer-contact {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -286,5 +301,59 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+}
+
+.footer .container {
+  display: flex;
+}
+
+/* ====================== */
+.social-footer {
+  padding: 70px 0 100px 70px;
+  width: 200px;
+}
+
+.social-footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+
+  margin-bottom: 20px;
+}
+
+/*====sprite social list====*/
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.social-list_item .social-list_item-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list_item-link svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-list_item-link:hover {
+  fill: var(--accent-color);
 }
 /*===========END FOOTER===========*/
