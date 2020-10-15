@@ -18,7 +18,7 @@
   padding: 0;
 }
 
-body {
+.body {
   font-family: var(--main-font);
 }
 
@@ -427,9 +427,6 @@ img {
 .client-list-item {
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .client-list-item-link {
@@ -437,6 +434,9 @@ img {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .client-list-item-link svg {
@@ -445,9 +445,11 @@ img {
   height: 53px;
 }
 
-.client-list-item-link:hover svg,
-.client-list-item {
+.client-list-item-link:hover svg {
   fill: var(--accent-color);
+}
+.client-list-item-link:hover {
+  border: 1px solid var(--accent-color);
 }
 /*===========END CLIENTS===========*/
 
